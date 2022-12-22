@@ -42,6 +42,7 @@ public class Inventory  {
 
 
     public void decreateStock(DecreateStockCommand decreateStockCommand){
+        setStock(getStock() - decreateStockCommand.getQty());
     }
 
 
